@@ -1,6 +1,10 @@
-package paqAnimales;
+package es.iesjoseplanes.ed1dawdist.tarea4;
 
 public class Perro extends Mamifero {
+
+    public Perro(String nombre) {
+        super(nombre);
+    }
 
     @Override
     void dormir() {
@@ -17,11 +21,8 @@ public class Perro extends Mamifero {
 
     @Override
     void relacionar(Animal p) {
-        System.out.println("Con el perro: " + p.nombre);
+        System.out.println("Con el perro: " + p.getNombre());
     }
 
-    String ToString() {
-        return this.nombre;
-    }
 
 }
